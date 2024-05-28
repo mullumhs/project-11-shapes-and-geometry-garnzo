@@ -18,17 +18,17 @@ class Square(Shape):
         return self.width * self.height
     
     def perimeter(self):
-        return ((self.width * 2) + (self.height * 2))
+        return (self.width + self.height) * 2
     
-class Circle(Shape):
+class Triangle(Shape):
 
     def __init__(self, base, height):
         self.base = base
         self.height = height
 
     def area(self):
-        pass
+        return 0.5 * self.base * self.height
     
     def perimeter(self):
-        pass
+        return self.base + self.height + self.height
     
